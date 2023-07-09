@@ -1,26 +1,86 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 *{
-     
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
+
+html{  scroll-behavior: smooth;}
 
 /* body{
     overflow-x:hidden;
 } */
 
-.navigation{background-color: plum;}
+.navbar {
+    background-color: aliceblue;
+    border-bottom: 3px solid #ddd;
+    z-index: 100;
+  }
+  
+  /* Navbar brand */
+  .navbar-brand {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Navbar links */
+  .navbar-nav .nav-link {
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #007bff;
+  }
+  
+  /* Navbar toggler */
+  .navbar-toggler {
+    border-color: #ddd;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #333;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    outline: none;
+  }
+  
+  /* Active link */
+  .navbar-nav .nav-item.active .nav-link {
+    color: #007bff;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+  }
+  
+  .dropdown-item {
+    color: #333;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #e9ecef;
+    color: #333;
+  }
+
+ .navbar-nav{background-color: aliceblue;}
+
+.navbar{background-color: aliceblue; z-index:100;}
 
 nav 
 {
-    height: 120px;
+    height: 100px;
     width: 100%;
-    background-color: aliceblue;
-    
-}
+    background-color: aliceblue;   
+} 
+
+
 
 .move{ 
     animation: motion 8s infinite linear;
@@ -59,14 +119,18 @@ nav ul {
 }
 
 nav ul li{
-    font-size: 20px; color: gray; padding: 10px;   display: inline;
+    font-size: 15px; color: gray;
 }
 
 #main{
-    height: 900px;
+    min-height: 750px;
     width: 100%;
     background-color: aliceblue;
-   padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 #main img{
@@ -78,25 +142,6 @@ nav ul li{
     text-align: center;
 
 }
-#main button{
-    margin: auto;
-}
-
-.main{display: flex; flex-direction: row; justify-content: center;}
-
-.main div
-{
-    height: 250px; width: 300px; background-color: aliceblue; margin: 20px; padding: 20px; transition: all 0.5s ease;
-}
-
-.main div:hover{
-
-     transform: translateY(-30px);
-     box-shadow: 2px 2px 2px 2px black;
-}
-
-.main h1{font-size: 30px;}
-.main p{color:black;}
 
 /* about-us */
 
@@ -109,29 +154,38 @@ nav ul li{
      text-align:start;
  }
 
-.first{display: flex; flex-direction: row;  padding: 100px; }
-.second img{height: 400px; width: 300px; border-radius: 20px; margin: 25px;}
+ #about{margin: 70px 0px;}
 
-.second{ height: 500px; width:1200px ; background-color: lightblue; display: flex; flex-direction: row; border-radius: 20px; padding: 25px;}
+
+.first{display: flex; flex-direction: row;}
+.second img{min-height: 400px; min-width: 300px; border-radius: 20px; margin: 15px;}
+
+.second{ min-height: 450px; max-width:1000px ; background-color: lightblue; display: flex; flex-direction: row; border-radius: 20px; padding: 5px; margin: 50px 150px;}
+
+@media  screen and (max-width:800px)
+ {
+    .second{ margin: 150px 0px;}
+}
 
 .second p{font-weight: bolder; text-align: left;}
 
 .vid .vid1
 {
     background-image: url('images/onfocus-content-bg.jpg');
-    height: 600px; padding:40px; 
+    min-height: 600px; padding:40px; min-width: 50%;
+    text-align: left;
 }
 
 .vid1 p,li{font-size: 20px;}
-.img1,.vid1{
-    width: 50%; height: 100%; 
+.img1{
+    min-width: 50%; min-height: 600px;
 }
 
 
 
 /* .tabular .nav-item{height: 150px; width: 190px; background-color: whitesmoke; margin: 10px; }  */
 
-.tabular img{ height: 290px; width: 320px; float: right; margin-top: -200px;}
+.tabular img{ min-height: 290px; min-width: 320px; float: right; }
 
 .tabular .tab-content h3,p,li{color: #33334d; text-align: left;}
 
@@ -148,28 +202,22 @@ nav ul li{
 
 #features li a{font-size: 25px;}
 
-#features .features li{list-style-type: none;}
+#features  li{list-style-type: none;}
+
+
 /* services */
 
 #services{margin: 100px 0;}
 
-
+#services .services .ser{margin-bottom: 190px;}
 #services .ser .serImg
-{height: 230px; 
-    width: 330px; 
+{min-height: 230px; 
+   min-width: 330px; 
     transition: all 0.6s ease;
     border-radius: 10px;
     }
 
-#services .services{
 
-    display: grid; 
-    grid-template-rows:500px 500px ;
-    grid-template-columns:360px 360px 360px;
-    row-gap: 40px;
-    column-gap: 40px;
-
-}
 
 figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
 
@@ -196,18 +244,17 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
     height: 450px; width: 100%;
     padding:60px;
     box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .5);
-    
 }
 
-.carousel-item .rate{height: 30px; width: 80px; margin: auto;}
+.carousel-item .rate{height: 30px; width: 80px; display: flex; justify-content: center;}
 
 .carousel-item img{height: 150px; width: 150px; border-radius: 50%; margin: auto;}
 
 .carousel-item h3,span,p{color: white; text-align: center;}
 
-.carousel-inner span{margin-left:  455px;}
+.carousel-inner span{display: flex; justify-content: center;}
 
-.carousel-inner .rate{margin-left: 455px;}
+
 
 /* price */
 #price{margin: 100px 0; }
@@ -218,12 +265,10 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
 
 .free,.develop
 {
-    height: auto; width: 350px; border: 3px solid black; margin-right: 20px;
+    max-height: 700px; min-width: 350px; border: 3px solid black; margin-right: 20px;
 }
 
-.business{border: 3px solid deepskyblue; margin-right: 20px;  height: auto; width: 350px;}
-
-
+.business{border: 3px solid deepskyblue; margin-right: 20px;  max-height: 700px; min-width: 350px;}
 
 .free div, .business div, .develop div
 {
@@ -244,7 +289,6 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
     margin: 2px;
 }
 
-
 #portfolio .tab-content img{height: 250px; width: 300px; margin: 20px; transition: all 0.4s ease-out;}
 
 #portfolio img:hover 
@@ -254,6 +298,24 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
 
 .layer{height: 250px; width: 300px; overflow: hidden;}
 
+#portfolio .nav-item .nav-link{font-size: 18px; }
+#portfolio .nav-pills{ display: flex;justify-content: center;}
+
+#portfolio .nav-pills .nav-link {
+    color: #333;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+  }
+  
+ #portfolio .nav-pills .nav-link:hover,
+  .nav-pills .nav-link:focus {
+    background-color: #e9ecef;
+  }
+  
+ #portfolio .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: palevioletred;
+  }
 
 /* questions */
 
@@ -264,15 +326,17 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
 
 #questions .card-header .btn {color:deepskyblue;}
 
-.questions img{height: 400px; width: 400px;}
+.questions img{min-height: 400px; min-width: 400px;}
 
-#accordian .card .card-header {height: 100px; width: 400px;}
+#accordian .card .card-header {min-height: 100px; min-width: 400px;}
 
-#accordian{height: 400px; width: 500px;}
+#accordian{min-height: 400px; min-width: 500px;}
 
 #team{margin: 100px 0px; text-align: center;}
 
-#blog{margin:100px;}
+#blog{margin:50px 0px;}
+
+
 
 .blog-details p{color:black;}
 
@@ -280,7 +344,7 @@ figure{height: 230px; width: 330px; overflow: hidden; border-radius: 10px;}
 
 .author{display: flex; flex-direction: row;}
 
-aside{width: 400px;
+aside{min-width: 400px;
      padding:20px; 
      margin: 40px; 
      float: right; 
@@ -292,27 +356,20 @@ aside{width: 400px;
     
     margin-top: 25px; }
 
-#contact .contact{display: flex; justify-content: space-around;}
+#contact .contact {display: flex;flex-direction: row; justify-content: space-around;}
 
 #contact p{color:gray;}
 
-#contact .contact form input[type="text"]
-{
-    height: 60px; width: 340px;
-    margin: 20px;
-}
+#contact form{margin: 40px;}
 
-
-form input[type="text"]:focus
-
-{outline: none;}
-
-
-#contact .contact textarea{
-
-    height: 200px; width: 700px;
-}
-
+#contact .form-control {
+    border-radius: 0;
+  }
+  
+  /* Placeholder text */
+  #contact  .form-control::placeholder {
+    color: #999;
+  }
 
 #subscribe{
 
@@ -325,7 +382,7 @@ form input[type="text"]:focus
 }
 
 footer{
-    height: 100px; 
+    min-height: 100px; 
     width: 100%;
     background-color: #33334d;
     color:white;

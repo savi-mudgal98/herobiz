@@ -15,15 +15,15 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navigation">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed">
     <div class="container-fluid">
       
-      <a class="navbar-brand" style="font-size: 40px;" href="#home">HeroBiz<span style="color: rgb(15, 104, 238); font-size: 90px;">.</span></a>
+      <a class="navbar-brand" style="font-size: 30px;" href="#main">HeroBiz<span style="color: rgb(15, 104, 238); font-size: 70px;">.</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
 
           <li class="nav-item">
             <li class="nav-item dropdown">
@@ -32,30 +32,32 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Index-1</a></li>
-                <li><a class="dropdown-item" href="#">Index-2</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Index-3</a></li>
+            
               </ul>
             </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#about"></a>
+            <a class="nav-link " href="#about"></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#services">Services</a>
+            <a class="nav-link " href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#portfolio">Portfolio</a>
+            <a class="nav-link " href="#team">Team</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link mx-3" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-3" href="#blog">Blog</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#blog" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog-details.html">Blog-details</a></li>
+
+            </ul>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link mx-3" href="#contact">Contact</a>
+            <a class="nav-link " href="#contact">Contact</a>
           </li>
          
         </ul>
@@ -72,63 +74,34 @@
         <img src="images/hero-carousel/hero-carousel-3.svg" class="mx-auto d-block" class="move linear infinite">
         <h1>Welcome to <span style="color: rgb(15, 104, 238);">HeroBiz</span></h1>
         <p style="color:gray; font-size: 25px;">Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut</p>
-        <button style="padding:10px 20px; background-color: rgb(15, 104, 238); color:white; font-size: 20px; border: none; margin-left: 480px;">Get Started</button>
-        <p>Watch Video</p>
+        <button style="padding:10px 20px; background-color: rgb(15, 104, 238); color:white; font-size: 20px; border: none; margin-top: 1rem;">Get Started</button>
+  </div>
     
+  
 
-    <div class="main" data-aos="fade-up" >
-
-      <div class="col-lg-3 col-md-6 col-sm-12"  data-aos="zoom-in-right">
-        <h1>Nemo Enim</h1>
-        <p>
-          Excepteur sint occaecat<br>
-           cupidatat non proident, sunt <br>
-           in culpa qui officia <br>
-          </p>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-right">
-        <h1>Sedut Persi</h1>
-        <p>
-          Voluptatum deleniti atque corrupti quos <br>
-           dolores et quas molestias excepturi <br>
-        
-          </p>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-right">
-        <h1>Magni Dolores</h1>
-        <p>
-          Duis aute irure dolor in reprehenderit <br>
-          in voluptate velit esse cillum dolore
-           <br>
-          </p>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="zoom-in-right">
-        <h1>Nemo Enim</h1>
-        <p>
-          Excepteur sint occaecat<br>
-           cupidatat non proident, sunt <br>
-           in culpa qui officia <br>
-          </p>
-      </div>
-    </div>
-
-    </div>
-
-    <div id="about" class="my-auto container" data-scroll data-aos="fade-up">
+    <div id="about"  data-scroll data-aos="fade-up">
+      <div class="container">
 
       <h1 style="font-size: 40px; text-align: center;">About Us</h1>
       <p style="font-size: 20px; text-align: center; color: black;">Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores<br>
          sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
    
+
+       
          <div class="first">
-         <div class=" left">
+         <div class="container">
+          <div class="row">
+        
+          
           <div class="col-lg-4 col-md-5 col-sm-12">
-          <img src="images/about-bg.png"  style="height: 400px; width: 300px; z-index: 30; ">
-         <img src="images/about.jpg"  style="height: 450px; width:370px;  margin-top: -320px; margin-left: 60px;">
+            <div class=" left">
+          <img src="images/about-bg.png"  style="height: auto; width: 100%; z-index: 30; " class="img-fluid">
+         <img src="images/about.jpg"  style="min-height: 450px; min-width:370px;  margin-top: -440px; margin-left: 60px;" class="img-fluid">
         </div>
         </div>
 
-           <div class="col-lg-8 col-md-7 col-sm-12 mt-3 right">
+           <div class="col-lg-8 col-md-7 col-sm-12 mt-3 ">
+            <div class="right ms-5">
             <br>
             <p style="font-size: 25px; color:gray;">
             Neque officiis dolore maiores et 
@@ -181,12 +154,17 @@
               </div>
             </div>
           </div>
-
           </div>
-
+          </div>
+         </div>
+          </div>
+        </div>
+        </div>
       
 
-           <div class="second container"  data-aos="fade-up">
+           <div class="second"  data-aos="fade-up">
+            <div class="container">
+              <div class="row">
             <div class="col-lg-8 col-md-6 col-sm-12">
             <p style="font-size: 40px; color:navy">Alias sunt quas Cupiditate<br> oluptas hic minima</p>
             <p style="font-size: 20px; color: navy;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br>
@@ -195,17 +173,23 @@
                 <button style="padding: 10px 14px; background-color: blue; color: white; font-size: 25px; margin: 40px; border:none;">Call to Action</button>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="images/cta.jpg" >
+                <img src="images/cta.jpg" class="img-fluid">
+                </div>
+                </div>
                 </div>
            </div>
 
    
 
-    <div class="vid d-flex my-5 container"  data-aos="fade-up">
-      <div class="img1 col-lg-6 col-md-6 col-sm-12">
-      <img src="images/onfocus-video-bg.jpg" style="height: 600px; ">
+    <div class="vid d-flex my-5 "  data-aos="fade-up">
+       <div class="container-fluid">
+        <div class="row">
+      <div class=" col-lg-6 col-md-6 col-sm-12">
+          <div class="img1">
+      <img src="images/onfocus-video-bg.jpg" class="img-fluid"></div>
       </div>
-      <div class="vid1 p-5 col-lg-6 col-md-6 col-sm-12">
+      <div class=" col-lg-6 col-md-6 col-sm-12">
+        <div class="vid1">
          <h1 style="color:white; font-size: 32px;">Voluptatem dignissimos provident quasi corporis</h1>
          <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>et dolore magna aliqua.</p>
         <ul>
@@ -216,36 +200,48 @@
        </ul>
        <button class="btn btn-info p-3">Read more</button>
         </div>
+        </div>
+        </div>
+        </div>
     </div>
 
     
-<div id="features" class=" mt-3 tabular container"  data-aos="fade-up">
+<div id="features" class=" mt-3 tabular "  data-aos="fade-up">
+  <div class="container">
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-pills nav-justified" role="tablist">
-    <li class="nav-item  shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    <div class="row">
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item  shadow p-3 mb-5 bg-body-tertiary rounded">
       <a class="nav-link active" data-bs-toggle="pill" href="#modinest" style="font-weight: 700;">Modinest</a>
-    </li>
-    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    </li></div>
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded ">
       <a class="nav-link" data-bs-toggle="pill" href="#Undaesenti" style="font-weight: 700;">Undaesenti</a>
-    </li>
-    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    </li></div>
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded ">
       <a class="nav-link" data-bs-toggle="pill" href="#Pariatur" style="font-weight: 700;">Pariatur</a>
-    </li>
-    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    </li></div>
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded">
       <a class="nav-link " data-bs-toggle="pill" href="#Nostrum" style="font-weight: 700;">Nostrum</a>
-    </li>
-    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    </li></div>
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded ">
       <a class="nav-link " data-bs-toggle="pill" href="#Adipiscing" style="font-weight: 700;">Adipiscing</a>
-    </li>
-    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded col-lg-2 col-md-4 col-sm-6">
+    </li></div>
+    <div class=" col-lg-2 col-md-4 col-sm-6">
+    <li class="nav-item shadow p-3 mb-5 bg-body-tertiary rounded ">
       <a class="nav-link " data-bs-toggle="pill" href="#Reprehit" style="font-weight: 700;">Reprehit</a>
-    </li>
+    </li></div>
+    </div>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content text-dark ">
-    <div id="modinest" class="container tab-pane active text-dark"><br>
+    <div id="modinest" class=" tab-pane active text-dark"><br>
       
       <h3>Modinest</h3>
      
@@ -253,11 +249,11 @@
       <li><i class="bi bi-check-circle-fill"></i>Duis aute irure dolor in reprehenderit in voluptate velit</li>
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
-   
-      <img class="col-lg-3 col-md-12 col-sm-12" src="images/-1.svg">
+       <div class="col-lg-3 col-md-12 col-sm-12">
+      <img class="img-fluid" src="images/features-1.svg"></div>
     </div>
 
-    <div id="Undaesenti" class="container tab-pane fade text-dark"><br>
+    <div id="Undaesenti" class=" tab-pane fade text-dark"><br>
       <h3>Undaesenti</h3>
      
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -266,10 +262,11 @@
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
          <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-         <img class="col-lg-3 col-md-12 col-sm-12" src="images/-2.svg">
+        <div class="col-lg-3 col-md-12 col-sm-12">
+         <img class="img-fluid" src="images/features-2.svg"></div>
     </div>
 
-    <div id="Pariatur" class="container tab-pane fade text-dark"><br>
+    <div id="Pariatur" class=" tab-pane fade text-dark"><br>
       <h3>Pariatur</h3>
     
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -278,7 +275,8 @@
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img class="col-lg-3 col-md-12 col-sm-12" src="images/-3.svg">
+     <div class="col-lg-3 col-md-12 col-sm-12">
+      <img class="img-fluid" src="images/features-3.svg"></div>
     </div>
 
     <div id="Nostrum" class="container tab-pane fade"><br>
@@ -290,8 +288,8 @@
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
    
-  
-      <img class="col-lg-3 col-md-12 col-sm-12" src="images/-4.svg">
+  <div class="col-lg-3 col-md-12 col-sm-12">
+      <img class="img-fluid" src="images/features-4.svg"></div>
     </div>
 
     <div id="Adipiscing" class="container tab-pane fade"><br>
@@ -302,7 +300,8 @@
       <li><i class="bi bi-check-circle-fill"></i>Duis aute irure dolor in reprehenderit in voluptate velit</li>
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
-         <img class="col-lg-3 col-md-12 col-sm-12" src="images/-5.svg">
+         <div class="col-lg-3 col-md-12 col-sm-12">
+         <img class="img-fluid" src="images/features-5.svg"></div>
 
     </div>
 
@@ -314,15 +313,18 @@
       <li><i class="bi bi-check-circle-fill"></i>Duis aute irure dolor in reprehenderit in voluptate velit</li>
       <li><i class="bi bi-check-circle-fill"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br>
          reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatu</li>
-         <img class="col-lg-3 col-md-12 col-sm-12" src="images/-6.svg">
+        <div class="col-lg-3 col-md-12 col-sm-12">
+         <img class="img-fluid" src="images/features-6.svg"></div>
     </div>
 
   </div>
 </div>
 </div>
+</div>
 
 
-<div id="services" data-scroll class="container" data-aos="fade-up">
+<div id="services" data-scroll  data-aos="fade-up">
+  <div class="container">
 
   <h1 style="text-align: center;">Our Services</h1>
  
@@ -330,10 +332,12 @@
 
   <div class="services ">
 
-  <div class="ser">
+    <div class="row">
+ 
     <div class=" col-lg-4 col-md-6 col-sm-12">
+      <div class="ser">
     <figure>
-    <img src="images/services-1.jpg" class="serImg" data-aos="zoom-in">
+    <img src="images/services-1.jpg" class="serImg img-fluid" data-aos="zoom-in">
     </figure>
     <div class="desc shadow-lg p-4 mb-4 bg-white">
       <i class="bi bi-activity"></i>
@@ -347,10 +351,11 @@
   </div>
 </div>
 
-  <div class="ser ">
+
     <div class=" col-lg-4 col-md-6 col-sm-12">
+      <div class="ser ">
     <figure>
-    <img src="images/services-2.jpg" class="serImg" data-aos="zoom-in">
+    <img src="images/services-2.jpg" class="serImg img-fluid" data-aos="zoom-in">
     </figure>
     <div class="desc shadow-lg p-4 mb-4 bg-white">
       <i class="bi bi-activity"></i>
@@ -364,10 +369,11 @@
   </div>
   </div>
 
-  <div class="ser ">
+
     <div class=" col-lg-4 col-md-6 col-sm-12">
+      <div class="ser ">
     <figure>
-    <img src="images/services-3.jpg" class="serImg" data-aos="zoom-in">
+    <img src="images/services-3.jpg" class="serImg img-fluid" data-aos="zoom-in">
     </figure>
     <div class="desc shadow-lg p-4 mb-4 bg-white">
       <i class="bi bi-activity"></i>
@@ -380,8 +386,11 @@
     </div>
   </div>
   </div>
+  </div>
 
-  <div class="ser col-lg-4 col-md-6 col-sm-12">
+  <div class="row">
+  <div class=" col-lg-4 col-md-6 col-sm-12">
+    <div class="ser">
     <figure>
     <img src="images/services-4.jpg" class="serImg" data-aos="zoom-in">
   </figure>
@@ -395,8 +404,10 @@
           eos earum corrupti.</p>
     </div>
   </div>
+  </div>
 
-  <div class="ser col-lg-4 col-md-6 col-sm-12">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="ser">
     <figure>
     <img src="images/services-5.jpg" class="serImg" data-aos="zoom-in">
     </figure>
@@ -410,8 +421,10 @@
           eos earum corrupti.</p>
     </div>
   </div>
+  </div>
 
-  <div class="ser col-lg-4 col-md-6 col-sm-12">
+  <div class=" col-lg-4 col-md-6 col-sm-12">
+    <div class="ser">
     <figure>
     <img src="images/services-6.jpg" class="serImg" data-aos="zoom-in">
     </figure>
@@ -425,6 +438,9 @@
           eos earum corrupti.</p>
     </div>
   </div>
+  </div>
+  </div>
+</div>
 </div>
 </div>
 
@@ -499,15 +515,18 @@
 
 </div>
 
-<div id="price" data-scroll class="container" data-scroll data-aos="fade-up">
+<div id="price"  data-scroll data-aos="fade-up">
+  <div class="container">
   <h1 style="text-align: center;">Our Pricing</h1>
   <p style="color:darkslategrey; text-align: center; font-size: 20px;">Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam <br>
     voluptas asperiores sequi tenetur dolores incidunt enim 
     voluptatem magnam cumque fuga</p>
 
     <div class="price">
-    <div class="free " data-aos="zoom-in-left">
+      <div class="row">
       <div class="col-lg-4 col-md-12 col-sm-12">
+    <div class="free " data-aos="zoom-in-left">
+      
       <div>
      <h2 style="text-align: center;">Free Plan</h2>
      <p>$0<span> / month</span></p>
@@ -526,8 +545,9 @@
     </div>
     </div>
 
+    <div class="col-lg-4 col-md-12 col-sm-12">
     <div class="business" data-aos="zoom-in-left">
-      <div class="col-lg-4 col-md-12 col-sm-12">
+   
       <div>
      <h2 style="text-align: center;">Business Plan</h2>
      <p>$29<span> / month</span></p>
@@ -546,8 +566,9 @@
     </div>
     </div>
 
+    <div class="col-lg-4 col-md-12 col-sm-12">
     <div class="develop" data-aos="zoom-in-left">
-      <div class="col-lg-4 col-md-12 col-sm-12">
+     
       <div>
      <h2 style="text-align: center;">Developer Plan</h2>
      <p>$49<span>/month</span></p>
@@ -565,16 +586,22 @@
       <button style="color:deepskyblue; padding: 10px 20px; background-color: white; border:2px solid deepskyblue; margin-left: 110px;" >BUY NOW</button>
     </div>
     </div>
+    </div>
+</div>
+</div>
 </div>
 
 
-<div id="questions" data-scroll data-aos="fade-up" class="container">
+<div id="questions" data-scroll data-aos="fade-up">
+  <div class="container">
  <h1>Frequently Asked Questions</h1>
  <p style="color: darkslategray; font-size: 20px; text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
   incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
 
 <div class="questions">
-  <div id="accordion" class="col-lg-6 col-md-12 col-sm-12">
+  <div class="row">
+     <div class="col-lg-6 col-md-12 col-sm-12">
+  <div id="accordion">
     <div class="card shadow mb-2 bg-body-primary" data-aos="fade-up">
       <div class="card-header" >
         <a class="btn active" data-bs-toggle="collapse" href="#collapseOne">
@@ -640,24 +667,28 @@
       </div>
     </div>
   </div>
-  <img src="images/faq.jpg" class="col-lg-4 col-md-12 col-sm-12">
+  </div>
+  <div class="col-lg-4 col-md-12 col-sm-12">
+  <img src="images/faq.jpg" class="img-fluid"></div>
+  </div>
   </div>
 </div>
+</div>
 
-<div id="portfolio" data-scroll class="container" data-aos="fade-up">
+<div id="portfolio" data-scroll data-aos="fade-up">
+  <div class="container">
   <h1 style="text-align: center;">Portfolio</h1>
   <p style="color:darkslategrey; font-size: 20px;">Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum 
     sed fug dolorem est possimus esse quae repudiandae. Dolorem id enim <br>
     officiis sunt deserunt esse soluta consequatur quaerat</p>
 
      <!-- Nav tabs -->
-     <ul class="nav nav-pills " role="tablist" style="margin:auto ;">
+     <ul class="nav nav-pills " role="tablist">
       <li class="nav-item " >
         <a class="nav-link active" data-bs-toggle="tab" href="#all">All</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" data-bs-toggle="tab" href="#app">
-          APP</a>
+        <a class="nav-link" data-bs-toggle="tab" href="#app">APP</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" data-bs-toggle="tab" href="#product">PRODUCT</a>
@@ -672,144 +703,176 @@
   
     <!-- Tab panes -->
     <div class="tab-content ">
+     
+    
       <div id="all" class="tab-pane active"><br>
-         <div  class="col-lg-4 col-md-6 col-sm-12">
+        <div class="row">
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
 
        <img src="images/portfolio/app-2.jpg">
      
-      </div>
+      </div></div>
+      
+      <div  class="col-lg-4 col-md-6 col-sm-12">
       <div class="layer">
        
        <img src="images/portfolio/app-3.jpg">
      
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
   
        <img src="images/portfolio/books-1.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
    
        <img src="images/portfolio/branding-1.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
      
        <img src="images/portfolio/product-2.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
   
        <img src="images/portfolio/books-2.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
       
        <img src="images/portfolio/books-3.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
        
        <img src="images/portfolio/branding-3.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
         
        <img src="images/portfolio/app-1.jpg">
-       </div>
-
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
        
        <img src="images/portfolio/branding-2.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
           
        <img src="images/portfolio/product-1.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
        
        <img src="images/portfolio/product-3.jpg">
-       </div>
+       </div></div>
       </div>
       </div>
 
       <div id="app" class=" tab-pane fade"><br>
+        <div class="row">
         <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
           
         <img src="images/portfolio/app-1.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
      
        <img src="images/portfolio/app-2.jpg">
-       </div>
+       </div></div>
+       <div  class="col-lg-4 col-md-6 col-sm-12">
        <div class="layer">
        
        <img src="images/portfolio/app-3.jpg">
+       </div></div>
        </div>
       </div>
-      </div>
+      
 
       <div id="product" class=" tab-pane fade"><br>
-        <div  class="col-lg-4 col-md-6 col-sm-12">
+       <div class="row">
+          <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
          
         <img src="images/portfolio/product-1.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
          
         <img src="images/portfolio/product-2.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
         
         <img src="images/portfolio/product-3.jpg">
-        </div>
+        </div></div>
       </div>
       </div>
 
       <div id="branding" class=" tab-pane fade"><br>
+        <div class="row">
         <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
           
         <img src="images/portfolio/branding-1.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
           
         <img src="images/portfolio/branding-2.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
          
         <img src="images/portfolio/branding-3.jpg">
+        </div></div>
         </div>
       </div>
       </div>
 
       <div id="books" class=" tab-pane fade"><br>
+        <div class="row">
         <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
          
         <img src="images/portfolio/books-1.jpg">
-        </div>
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
         
-        <img src="images/portfolio/books-2.jpg"></figure>
-        </div>
+        <img src="images/portfolio/books-2.jpg">
+        </div></div>
+        <div  class="col-lg-4 col-md-6 col-sm-12">
         <div class="layer">
         
-        <img src="images/portfolio/books-3.jpg"></figure>
-        </div>
+        <img src="images/portfolio/books-3.jpg">
+        </div></div>
       </div>
 
+
+      </div>
     </div>
     </div>
   </div>
-
+</div>
 </div>
 
-<div id="team" class="mt-6 mx-4 container" data-scroll data-aos="fade-up">
+<div id="team" class="mt-6 mx-4 " data-scroll data-aos="fade-up">
+  <div class="container">
   <h1>Our Team</h1>
   <p style="color:darkslategrey; text-align: center; font-size: 20px;">Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores <br>
     incidunt enim voluptatem magnam cumque fuga.</p>
 
-    <div class="team d-flex">
-  <div class=" mt-3  col-lg-4 col-md-6 col-sm-12"> 
+    <div class="team">
+     <div class="row">
+  <div class="  col-lg-4 col-md-6 col-sm-12"> 
   
-    <div class="card" style="width:300px" data-aos="zoom-in">
+    <div class="card" style="min-width:300px" data-aos="zoom-in">
       <img class="card-img-top" src="images/team/team-1.jpg" alt="Card image" style="width:100%">
       <div class="card-body">
         <h4 class="card-title">William Anderson</h4>
@@ -820,9 +883,9 @@
     <br>
   </div>
 
-  <div class=" mt-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="  col-lg-4 col-md-6 col-sm-12">
    
-    <div class="card" style="width:300px; " data-aos="zoom-in">
+    <div class="card" style="min-width:300px; " data-aos="zoom-in">
       <img class="card-img-top" src="images/team/team-2.jpg" alt="Card image" style="width:100%">
       <div class="card-body">
         <h4 class="card-title">Walter White</h4>
@@ -833,9 +896,9 @@
     <br>
   </div>
 
-  <div class=" mt-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="  col-lg-4 col-md-6 col-sm-12">
 
-    <div class="card" style="width:300px" data-aos="zoom-in">
+    <div class="card" style="min-width:300px" data-aos="zoom-in">
       <img class="card-img-top" src="images/team/team-3.jpg" alt="Card image" style="width:100%">
       <div class="card-body">
         <h4 class="card-title">Sarah Johnson</h4>
@@ -846,16 +909,21 @@
     <br>
   </div>
   </div>
+  </div>
+  </div>
 </div>
 
-<div id="blog" data-scroll class="container" data-aos="fade-up">
-
+<div id="blog" data-scroll  data-aos="fade-up">
+    <div class="container">
   <h1 style="text-align: center;">Blog</h1>
     <p style="color: gray;">Recent posts from our Blog</p>
-    <div class="blog d-flex mx-lg-5">
-      <div class="card" style="width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
-        <div class="col-lg-4 col-md-12 col-sm-12">
-        <img class="card-img-top" src="images/blog/blog-1.jpg" alt="Card image" style="width:100%; height: 240px;">
+    <div class="blog mx-lg-5">
+
+      <div class="row">
+      <div class="  col-lg-4 col-md-6 col-sm-12">
+      <div class="card" style="min-width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
+     
+        <img class="card-img-top" src="images/blog/blog-1.jpg" alt="Card image" style="width:100%; height: 240px;" class="img fluid">
         <div class="card-body">
           <h4 class="card-title">
 
@@ -866,15 +934,17 @@
             </h4>
           <p class="card-text" style="font-size: 15px; color: gray;">Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam veritatis dicta nihil...
             </p>
-          <a href="blog-details.html">Read More</a>
+          <a href="blog-details.html" id="blog-details">Read More</a>
         </div>
+      
       </div>
       </div>
       <br>
  
-      <div class="card" style="width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
-        <div class="col-lg-4 col-md-12 col-sm-12">
-        <img class="card-img-top" src="images/blog/blog-2.jpg" alt="Card image" style="width:100%;  height: 240px;">
+      <div class="  col-lg-4 col-md-6 col-sm-12">
+      <div class="card" style="min-width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
+     
+        <img class="card-img-top" src="images/blog/blog-2.jpg" alt="Card image" style="width:100%;  height: 240px;" class="img-fluid">
         <div class="card-body">
           <h4 class="card-title">
 
@@ -887,13 +957,15 @@
              </p>
            <a href="blog-details.html">Read More</a>
         </div>
+      
       </div>
       </div>
       <br>
     
-    <div class="card" style="width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <img class="card-img-top" src="images/blog/blog-3.jpg" alt="Card image" style="width:100%;  height: 240px;">
+      <div class="  col-lg-4 col-md-6 col-sm-12">
+    <div class="card" style="min-width:370px; height: 530px; margin-right: 20px;" data-aos="zoom-in">
+   
+        <img class="card-img-top" src="images/blog/blog-3.jpg" alt="Card image" style="width:100%;  height: 240px;" class="img-fluid">
         <div class="card-body">
           <h4 class="card-title">
 
@@ -906,14 +978,19 @@
              </p>
            <a href="blog-details.html">Read More</a>
         </div>
-      </div>
+      
       </div>
       <br>
    
     </div>
+    </div>
+
+    </div>
+  </div>
   </div>
 
   <div id="contact" data-scroll data-aos="fade-up">
+ 
     <h1>Contact Us</h1>
     <p style="color:darkslategrey; text-align: center; font-size: 20px;">Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
    
@@ -925,7 +1002,10 @@
    
     </div>
 
-    <div class="contact container">
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+        <div class="  col-lg-6 col-md-6 col-sm-12">
     <div class="touch shadow-lg p-4 mb-4 bg-white" style="width: 350px; height: 500px;">
         <h3>Get in touch</h3>
         <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
@@ -938,23 +1018,34 @@
           <p>+1 5589 55488 55</p>
         </table>
         </div>
+        </div>
+        <div class="  col-lg-6 col-md-6 col-sm-12">
         <form>
-          <div class="d-flex">
-          <input type="text" placeholder="your name">
-          <input type="text" placeholder="your email">
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control">
+            <input type="text" aria-label="Last name" class="form-control">
           </div>
-        
-          <textarea placeholder="message"></textarea>
-          <input class="but" type="button" placeholder="Send Message"/>
+   
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
         </form>
-
+        </div>
       </div>
-
-
       </div>
-  
+      </div>
+     </div>
 
         <div id="subscribe" data-aos="fade-up">
+           <div class="container">
+
+            <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <h1>HEROBIZ</h1>
           <p style="color: #33334d">A108 Adam Street
@@ -994,7 +1085,9 @@
 <input type="text" />
 <button style="background-color:rgb(15, 104, 238); padding:20px; color:white;">Subscribe</button>
         </div>
-
+    
+        </div>
+        </div>
         </div>
 
         <footer >
